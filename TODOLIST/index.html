@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body>
+   <nav class="flex justify-center py-8 font-extrabold text-4xl bg-purple-500 shadow-xl"><h1>ToDo-List</h1></nav>
+
+   <div class="text-center py-8 bg-blue-400 m-20 flex">
+    <input id="inputText" type="text"  placeholder="add your work here" class="w-96 flex justify-start mx-8 h-12 rounded-lg">
+
+    <button onclick="addItem()" class="text-white bg-blue-950 rounded-full py-2 px-6">ADD</button>
+   </div>
+   <div class="flex px-6 bg-green-300 m-20 text-black">
+   <ul class="itemList" id="itemList" onclick="deleteItem()">
+    </ul>
+   </div>
+   
+  <script src="index.js"></script>
+
+</body>
+</html>
+
+  
